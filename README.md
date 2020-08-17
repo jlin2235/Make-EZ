@@ -21,9 +21,10 @@ Functionality/MVP
 
 Technology
 
-paper.js or d3
-CSS/HTML
-JavaScript
+- paper.js or d3
+- CSS/HTML
+- JavaScript
+- webpack
 
 
 
