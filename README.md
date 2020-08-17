@@ -4,11 +4,15 @@ Are you tired of eating junk food? Don't know what to cook for dinner? With more
 
 Functionality
 
-Use external API to help search for food recipes
-Use CSS to display food in a card form with picture
-Also able to list nutrient information
+- Use external API to help search for food recipes
+- Use CSS to display food in a card form with picture
+- Able to implement portion size 
+- Also able to list nutrient information
+- Graph visualization for nutrition facts (BONUS)
 
 
 Technology
+
+paper.js or d3
 CSS/HTML
 JavaScript
