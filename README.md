@@ -16,3 +16,12 @@ Technology
 paper.js or d3
 CSS/HTML
 JavaScript
+
+
+Timeline
+
+- setup: 1/2 day
+- implement API (research): 1-2 day
+- search function: 1/2 day
+- nutrition search: 1-2 day
+- Graph visualization: 1-2 day (BONUS)
