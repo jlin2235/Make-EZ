@@ -35,3 +35,8 @@ Timeline
 - search function: 1/2 day
 - nutrition search: 1-2 day
 - Graph visualization: 1-2 day (BONUS)
+
+
+Wireframe
+
+![Wireframe](https://i.imgur.com/ggvGFqU.png)
