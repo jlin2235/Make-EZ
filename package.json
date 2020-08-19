@@ -9,12 +9,18 @@
     "maintained node versions",
     "not dead"
   ],
-  "dependencies": {},
+  "dependencies": {
+    "axios": "^0.19.2"
+  },
   "devDependencies": {
     "@babel/core": "^7.11.1",
     "@babel/preset-env": "^7.11.0",
     "autoprefixer": "^9.8.6",
+    "babel-core": "^6.26.3",
     "babel-loader": "^8.1.0",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
     "css-loader": "^4.2.1",
     "fibers": "^5.0.0",
     "file-loader": "^6.0.0",

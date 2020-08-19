@@ -4,17 +4,30 @@
     color: black;
     font-family: Marker Felt, fantasy;
     background-image: url('./../../assets/images/foodPic.jpg');
-    min-height: 100%;
+    min-height: 70%;
     min-width: 1024px;
 	
     /* Set up proportionate scaling */
     width: 100%;
-    height: auto;
+    height: 70vh;
         
     /* Set up positioning */
-    position: fixed;
-    top: 0;
-    left: 0; 
+
    
 }
 
+#cards-container{
+      display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+
+    #search-result-container{
+        border: 1px solid blue;
+        margin: 10px;
+    }
+}
+
+#cards-container:after {
+  content: "";
+  flex: auto;
+}
