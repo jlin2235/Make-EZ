@@ -1,0 +1,43 @@
+.navbar-main-container{
+        background-color: #D6EFFF;
+        width: 100vw;
+
+        ul{
+            display: flex;
+
+            #button-li{
+                display: flex;
+            }
+    
+            li{
+                list-style-type: none;
+                margin: 0 2vw;
+                font-size: 4vh;
+            }
+        }
+
+        li:hover{
+            background-color: #80cbfa;
+        }
+        #navbar-button{
+            display: none;
+        }
+
+
+        @media only screen and (max-width: 500px){
+            #navbar-button{
+                display: block;
+            }
+            ul{
+                flex-direction: column;
+                #button-li{
+                    align-items: center;
+                    flex-direction: column;
+                }
+                li{
+                    margin: 0;
+                }
+            }
+            
+        }
+    }
