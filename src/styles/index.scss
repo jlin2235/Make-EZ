@@ -4,30 +4,55 @@
     color: black;
     font-family: Marker Felt, fantasy;
     background-image: url('./../../assets/images/foodPic.jpg');
-    min-height: 70%;
+    min-height: 100%;
     min-width: 1024px;
 	
     /* Set up proportionate scaling */
     width: 100%;
-    height: 70vh;
+    height: 100vh;
         
     /* Set up positioning */
+    background-color: #D6EFFF;
 
    
 }
 
 #cards-container{
-      display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    background-color: #D6EFFF;
+
 
     #search-result-container{
         border: 1px solid blue;
+        border-radius: 20px;
         margin: 10px;
+        background-color: #F1E4E8;
+        height: 400px;
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        img{
+          height: 60%;
+          border-radius: 5px;
+          border: 1px solid blue;
+
+        }
+        span{
+            font-family: Marker Felt, fantasy;
+        }
     }
+
+    #search-result-container:hover{
+        transform: scale(1.05, 1.05);
+    }
+    #search-result-container:hover::after{
+        opacity: 1;
+    }
+
 }
 
-#cards-container:after {
-  content: "";
-  flex: auto;
-}

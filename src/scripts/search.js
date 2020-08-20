@@ -13,35 +13,58 @@ const getRecipeData = () => {
             console.log(res);
             return res;
     })
-    .then(res => rendercards(res.data.hits))
-    debugger
+    .then(function (res){
+        rendercards(res.data.hits);
+        return res;
+    })
+    // .then(res => renderIngredients(res.data.hits))
+    
 }
+
+
 
 const clearValue = () => {
     document.getElementById('search-bar').value = "";
 }
 
 
+// const rendercards = (data) => {
+//     debugger
+
+          
+// }
 const rendercards = (data) => {
     debugger
+
+
     document.getElementById('cards-container').innerHTML = 
     (data.map(el => {
         debugger
+        const ingredientaList = el.recipe.ingredients.map(ingredient => {
+            return(
+                `<div>
+                    <ul>
+                        <li>${ingredient.text}</li>
+                    </ul>
+                </div>
+                `
+            )
+        })
         return(
             `<div id="search-result-container">
                 <img src='${el.recipe.image}'>
                 <h1> <span>Name</span> ${el.recipe.label} </h1>
-                <h1> <span>Calories</span> ${el.recipe.calories} </h1>
+                <h1> <span>Calories</span> ${el.recipe.calories.toFixed(2)} </h1>
                 <form target="_blank" action="${el.recipe.url}">
                     <input type="submit" value="Go to Recipe" />
                 </form>
+                ${ingredientaList}
             </div>` 
-        )
-        
-        
-    }))
-            
+        )    
+    }))          
 }
+
+
 
 export const testSearch = () => {
 
