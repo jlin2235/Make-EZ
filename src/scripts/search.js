@@ -40,13 +40,11 @@ const rendercards = (data) => {
     document.getElementById('cards-container').innerHTML = 
     (data.map(el => {
         debugger
-        const ingredientaList = el.recipe.ingredients.map(ingredient => {
+        const ingredientList = el.recipe.ingredientLines.map(ingredient => {
+            console.log(ingredient)
             return(
-                `<div>
-                    <ul>
-                        <li>${ingredient.text}</li>
-                    </ul>
-                </div>
+                `
+                    <li>${ingredient}</li>
                 `
             )
         })
@@ -58,7 +56,12 @@ const rendercards = (data) => {
                 <form target="_blank" action="${el.recipe.url}">
                     <input type="submit" value="Go to Recipe" />
                 </form>
-                ${ingredientaList}
+                <button>Ingredients</button>
+                <div id='ingredientListContainer'>
+                    <ul>
+                        ${ingredientList}
+                    </ul>
+                 </div>
             </div>` 
         )    
     }))          

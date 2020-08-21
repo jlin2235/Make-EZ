@@ -45,6 +45,10 @@
         span{
             font-family: Marker Felt, fantasy;
         }
+
+        #ingredientListContainer{
+          display: none;
+        }
     }
 
     #search-result-container:hover{
