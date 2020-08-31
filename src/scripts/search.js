@@ -79,3 +79,15 @@ export const testSearch = () => {
     })
 }
 
+
+
+export const test2Search = () => {
+    const searchInput = document.getElementById('search-bar');
+
+    searchInput.addEventListener("keyup", () => {
+        if (event.keyCode === 13) {
+            getRecipeData();
+            clearValue();
+        }
+    }) 
+}
