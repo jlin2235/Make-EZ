@@ -13,9 +13,7 @@
 }
 
 #cards-container{
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
+  
     background-color: #D6EFFF;
 
 
@@ -25,9 +23,7 @@
         margin: 10px;
         background-color: #F1E4E8;
         height: 400px;
-        width: 300px;
         display: flex;
-        flex-direction: column;
         align-items: center;
         justify-content: center;
 
@@ -41,9 +37,7 @@
             font-family: Marker Felt, fantasy;
         }
 
-        #ingredientListContainer{
-          display: none;
-        }
+        
     }
 
     #search-result-container:hover{

@@ -18,6 +18,9 @@ const getRecipeData = () => {
         return res;
     })
     // .then(res => renderIngredients(res.data.hits))
+
+
+    
     
 }
 
@@ -40,28 +43,30 @@ const rendercards = (data) => {
     document.getElementById('cards-container').innerHTML = 
     (data.map(el => {
         debugger
-        const ingredientList = el.recipe.ingredientLines.map(ingredient => {
+        const ingredientList = el.recipe.ingredients.map(ingredient => {
+            debugger
             console.log(ingredient)
             return(
                 `
-                    <li>${ingredient}</li>
+                    <li>${ingredient.text}</li>
                 `
             )
         })
         return(
             `<div id="search-result-container">
-                <img src='${el.recipe.image}'>
-                <h1> <span>Name</span> ${el.recipe.label} </h1>
-                <h1> <span>Calories</span> ${el.recipe.calories.toFixed(2)} </h1>
-                <form target="_blank" action="${el.recipe.url}">
-                    <input type="submit" value="Go to Recipe" />
-                </form>
-                <button>Ingredients</button>
+                <div>
+                    <img src='${el.recipe.image}'>
+                    <h1> <span>Name</span> ${el.recipe.label} </h1>
+                    <h1> <span>Calories</span> ${el.recipe.calories.toFixed(2)} </h1>
+                    <form target="_blank" action="${el.recipe.url}">
+                        <input type="submit" value="Go to Recipe" />
+                    </form>
+                </div>
                 <div id='ingredientListContainer'>
                     <ul>
-                        ${ingredientList}
+                        ${ingredientList.join(' ')}
                     </ul>
-                 </div>
+                </div>
             </div>` 
         )    
     }))          
@@ -76,6 +81,7 @@ export const testSearch = () => {
     searchInput.addEventListener('click', () => {
         getRecipeData();
         clearValue();
+        ingredientDisplay();
     })
 }
 
@@ -88,6 +94,18 @@ export const test2Search = () => {
         if (event.keyCode === 13) {
             getRecipeData();
             clearValue();
+            ingredientDisplay();
+
         }
     }) 
 }
+
+// const ingredientDisplay = () => {
+//     debugger
+//     const ingredientListButton = document.getElementById('ingredientListButton');
+//     const ingredientListContainer = document.getElementById('ingredientListContainer');
+//     ingredientListButton.addEventListener('click', () =>{
+//         debugger
+//         ingredientListContainer.style.display = "block";
+//     })
+// }
