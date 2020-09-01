@@ -54,7 +54,7 @@ const rendercards = (data) => {
         })
         return(
             `<div id="search-result-container">
-                <div>
+                <div id="search-result-pic-description">
                     <img src='${el.recipe.image}'>
                     <h1> <span>Name</span> ${el.recipe.label} </h1>
                     <h1> <span>Calories</span> ${el.recipe.calories.toFixed(2)} </h1>
@@ -74,7 +74,7 @@ const rendercards = (data) => {
 
 
 
-export const testSearch = () => {
+export const buttonSearch = () => {
 
     debugger
     const searchInput = document.getElementById('search-bar-submit-button')
@@ -87,7 +87,7 @@ export const testSearch = () => {
 
 
 
-export const test2Search = () => {
+export const enterSearch = () => {
     const searchInput = document.getElementById('search-bar');
 
     searchInput.addEventListener("keyup", () => {
@@ -100,12 +100,5 @@ export const test2Search = () => {
     }) 
 }
 
-// const ingredientDisplay = () => {
-//     debugger
-//     const ingredientListButton = document.getElementById('ingredientListButton');
-//     const ingredientListContainer = document.getElementById('ingredientListContainer');
-//     ingredientListButton.addEventListener('click', () =>{
-//         debugger
-//         ingredientListContainer.style.display = "block";
-//     })
-// }
+
+
