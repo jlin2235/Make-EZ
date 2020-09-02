@@ -1,4 +1,5 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&display=swap');
 
 #main-container{
     color: black;
@@ -47,7 +48,7 @@
             
         }
 
-        #ingredientListContainer{
+        #healthLabelsContainer{
 
             h1{
                 font-weight: 700;
@@ -74,7 +75,8 @@
 
     h1{
         font-size: 50px;;
-        font-weight: 600;
+        font-weight: 700;
+        font-family: 'Dancing Script', cursive;
     }
     p{
         font-size: 20px;;

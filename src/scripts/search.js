@@ -43,12 +43,12 @@ const rendercards = (data) => {
     document.getElementById('cards-container').innerHTML = 
     (data.map(el => {
         debugger
-        const ingredientList = el.recipe.ingredients.map(ingredient => {
+        const healthLabels = el.recipe.healthLabels.map(healthLabels => {
             debugger
-            console.log(ingredient)
+            console.log(healthLabels)
             return(
                 `
-                    <li>${ingredient.text}</li>
+                    <li>${healthLabels}</li>
                 `
             )
         })
@@ -62,10 +62,10 @@ const rendercards = (data) => {
                         <input type="submit" value="Go to Recipe" />
                     </form>
                 </div>
-                <div id='ingredientListContainer'>
+                <div id='healthLabelsContainer'>
                     <ul>
-                        <h1> Ingredients </h1>
-                        ${ingredientList.join(' ')}
+                        <h1> Health Labels </h1>
+                        ${healthLabels.join(' ')}
                     </ul>
                 </div>
             </div>` 
