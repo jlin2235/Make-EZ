@@ -2,7 +2,7 @@
     /* position: absolute; */
     width: 100%;  
     text-align: center;
-    padding-top: 50vh;;
+    padding-top: 20vh;;
 
 
     #search-bar{
@@ -26,22 +26,14 @@
         background-color: white;
     }
 
+    #search-bar-submit-button{
+        background-color: white;
+        padding:  0 10px;
+        border: solid #D4AF37 3px;
+        border-radius: 30px;
+        text-align: center;
+        height: 50px;
+    }
 
 }
 
-@media only screen and (max-width: 850px){
-    .search-bar-container{
-        position: absolute;
-        top: 60%;
-        left: 5%;
-    }
-                
-}
-@media only screen and (max-width: 500px){
-    .search-bar-container{
-        position: absolute;
-        top: 60%;
-        left: 0;
-    }
-                
-}

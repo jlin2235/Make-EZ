@@ -64,6 +64,7 @@ const rendercards = (data) => {
                 </div>
                 <div id='ingredientListContainer'>
                     <ul>
+                        <h1> Ingredients </h1>
                         ${ingredientList.join(' ')}
                     </ul>
                 </div>

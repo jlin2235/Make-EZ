@@ -4,17 +4,32 @@
 
         ul{
             display: flex;
+            height: 50px;
 
             #button-li{
                 display: flex;
+                align-items: center;
+
+
+                #instruction-navbar{
+                    background-color: white;
+                    padding:  0 10px;
+                    border: solid #D4AF37 3px;
+                    border-radius: 50px;
+                    text-align: center;
+                    height: 50%;
+                }
+
+                li{
+                    list-style-type: none;
+                    margin: 0 2vw;
+                    font-size: 3vh;
+                    font-weight: 500;
+                    display: flex;
+                    align-items: center;
+                }
             }
-    
-            li{
-                list-style-type: none;
-                margin: 0 2vw;
-                font-size: 3vh;
-                font-weight: 500;
-            }
+            
         }
 
         li:hover{
@@ -25,7 +40,7 @@
         }
 
 
-        @media only screen and (max-width: 500px){
+       /*  @media only screen and (max-width: 500px){
             #navbar-button{
                 display: block;
             }
@@ -40,5 +55,5 @@
                 }
             }
             
-        }
+        } */
     }

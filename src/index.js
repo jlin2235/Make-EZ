@@ -13,11 +13,11 @@ document.addEventListener('DOMContentLoaded', () => {
     aboutmodal();
     closemodal();
 
-    document.onclick = function (evt) {
-        debugger
-        var evt = window.event || evt; // window.event for IE
-        if (!evt.target) evt.target = evt.srcElement; // extend target property for IE
-        alert(evt.target); // target is clicked
-    }
+    // document.onclick = function (evt) {
+    //     debugger
+    //     var evt = window.event || evt; // window.event for IE
+    //     if (!evt.target) evt.target = evt.srcElement; // extend target property for IE
+    //     alert(evt.target); // target is clicked
+    // }
 
 })

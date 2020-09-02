@@ -14,7 +14,7 @@ const openModal = () => { //OPENS MODAL WHEN INSTRUCTION BUTTON IS CLICKED
 
 export const aboutmodal = () => {
     debugger
-    const about = document.getElementById('about');
+    const about = document.getElementById('instruction-navbar');
     about.addEventListener("click", ()=>{
         debugger
         openModal();
